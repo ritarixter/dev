@@ -1,0 +1,67 @@
+@import "../../styles/variables.scss";
+
+.popup__container {
+        transition: all .5s ease;
+    opacity: 0;
+    visibility: hidden;
+        z-index: 3;
+        position: absolute;
+        width: 300px;
+        font-size: 12px;
+        background: $thirdColor;
+        border-radius: 10px;
+        padding: 20px 17px 20px;
+        box-sizing: border-box;
+        margin: 0;
+        top: 30px;
+        right: 8px;
+
+        &_opened {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+.messageArea {
+    margin-bottom: 33px;
+}
+
+.truncate {
+    color: #3B9ACD;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.dateFromNow {
+    color: #BDBDBD;
+    font-size: 9px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btnShow {
+    background: none;
+    border: 0;
+    font-size: 12px;
+    cursor: pointer;
+    color: #20814D;
+    margin: 0;
+    padding: 0;
+}
+
+.btnNewMessage {
+    background: none;
+    border: 0;
+    font-size: 12px;
+    cursor: pointer;
+    color: #F47633;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,52 @@
+@import "../../styles/variables.scss";
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $dashboardTitleColor;
+  margin: 0;
+}
+
+.container {
+  width: 392px;
+  padding: 26px 0;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background: $thirdColor;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 26px;
+  margin-bottom: 12px;
+}
+
+.task {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 355px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+  &::-webkit-scrollbar-thumb {
+    height: 50px;
+    background: $subtitleColor;
+    border-radius: 50px;
+    width: 3px;
+  }
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+}
+
+.error {
+  margin: 0;
+padding: 0 26px;
+font-size: 14px;
+}

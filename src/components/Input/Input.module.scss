@@ -1,0 +1,45 @@
+@import "../../styles/variables.scss";
+.block {
+  position: relative;
+}
+.input {
+  height: 40px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 12px 16px;
+  border: 1px solid $inputColor;
+  border-radius: 6px;
+  outline: none;
+  box-sizing: border-box;
+  
+  cursor: pointer;
+  color: $primaryColor;
+  font-family: "Poppins", sans-serif;
+  &::placeholder {
+    color: $nullColor;
+  }
+
+  &.error {
+    margin-bottom: 0;
+    border: 1px solid $statusHard;
+  }
+}
+
+.error {
+  &_text {
+    font-size: 13px;
+    color: $statusHard;
+  }
+}
+
+.caption {
+  color: $inputCaption;
+  font-size: 14px;
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+
+.mb_8 {
+  margin-bottom: 8px;
+}

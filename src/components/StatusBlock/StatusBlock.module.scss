@@ -1,0 +1,29 @@
+@import "../../styles/variables.scss";
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #20814d;
+  background-color: $statusDoneColor;
+  border-radius: 4px;
+  width:102px;
+  padding: 1px 10px;
+  font-size: 14px;
+  height: 30px;
+  &__do {
+    background-color: $statusDoColor;
+    color: #3b9acd;
+    width: 79px;
+  }
+
+  &__todo {
+    background-color: $statusToDoColor;
+    color: #f47633;
+    width: 131px;
+  }
+
+  &.null {
+    background-color: $bgNullColor;;
+    color:  $nullColor;
+  }
+}

@@ -1,0 +1,57 @@
+@import "../../styles/variables.scss";
+
+.block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+
+  &_help {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.block_users {
+  display: flex;
+}
+
+.block_icon {
+  position: relative;
+  cursor: pointer;
+}
+
+.message {
+  margin-right: 8px;
+}
+
+.popup_notification {
+  position: relative;
+  cursor: pointer;
+}
+
+.notice {
+  position: absolute;
+  top: 9px;
+  right: 4px;
+}
+
+.users {
+  display: flex;
+  align-items: center;
+  margin-left: 27px;
+  position: relative;
+  cursor: pointer;
+}
+
+.arrow {
+  margin-left: 4px;
+  width: 9px;
+  height: 24px;
+  
+  transition: all .2s ease;
+  &.open {
+    transform: rotateX(180deg);
+  }
+}

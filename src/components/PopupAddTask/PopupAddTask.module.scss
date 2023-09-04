@@ -1,0 +1,175 @@
+@import "../../styles/variables.scss";
+
+.popup {
+  max-width: 392px;
+  width: 100%;
+  height: auto;
+  background-color: $thirdColor;
+  z-index: 3;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid $borderPopup;
+  border-radius: 15px;
+  padding: 17px 23px 21px 22px;
+
+  &_opened {
+    visibility: visible;
+  }
+
+  &_text {
+    margin: 0;
+  }
+
+  &_title {
+    font-size: 20px;
+    margin: 0;
+    margin-right: 8px;
+  }
+
+  &_conteiner {
+    position: relative;
+  }
+}
+
+.containerTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.create_task {
+  height: auto;
+  max-width: 347px;
+  width: 100%;
+  border: 1px solid $borderPopup;
+  border-radius: 10px;
+  margin-top: 9.7px;
+}
+
+.inputTitle {
+  border: none;
+  height: auto;
+  max-width: 347px;
+  box-sizing: border-box;
+  border-bottom: 1px solid $borderPopup;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px 20px;
+  color: $primaryColor;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  &::placeholder {
+    color: $subtitleColor;
+  }
+}
+
+.description {
+  border: none;
+  height: 80px;
+  resize: none;
+  color: $primaryColor;
+  max-width: 347px;
+  width: 100%;
+  border-radius: 6px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  font-size: 12px;
+  cursor: pointer;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+  &::-webkit-scrollbar-thumb {
+    background: $inputColor;
+
+    width: 3px;
+  }
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+  outline: none;
+  &::placeholder {
+    color: $subtitleColor;
+  }
+}
+
+.block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 21px;
+  margin-bottom: 13px;
+}
+
+.inputDate {
+  width: 100px;
+  height: 28px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  background-color: $statusDoneColor;
+  margin-right: 12px;
+  padding: 2px 4px;
+  color: $primaryColor;
+}
+.date {
+  width: 90px;
+  height: 28px;
+  padding: 2px 4px;
+
+  border-radius: 4px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  margin-right: 12px;
+  font-size: 13px;
+  background-color: $dropDown;
+
+  color: $primaryColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown {
+  font-family: "Poppins", sans-serif;
+  width: 90px;
+  height: 28px;
+  padding: 2px 4px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+
+  border-radius: 4px;
+
+  &_red {
+    background-color: $statusToDoColor;
+    color: #f47633;
+  }
+
+  &_green {
+    background-color: $statusDoneColor;
+    color: $mainColor;
+  }
+}
+
+.caption {
+  margin: 0;
+  color: $primaryColor;
+  font-size: 16px;
+  cursor: pointer;
+  color: $inputCaption;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.buttonBlock {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}

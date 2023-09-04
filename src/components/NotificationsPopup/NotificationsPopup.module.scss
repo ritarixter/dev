@@ -1,0 +1,57 @@
+@import "../../styles/variables.scss";
+
+.popup__container {
+  z-index: 3;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: 300px;
+  font-size: 12px;
+  background: $thirdColor;
+  border-radius: 10px;
+  padding: 20px 17px 20px;
+  box-sizing: border-box;
+  margin: 0;
+  top: 30px;
+  right: 1px;
+
+  &_opened {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.truncate {
+  color: #3b9acd;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.dateFromNow {
+  color: #bdbdbd;
+  font-size: 9px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.btnShow {
+  background: none;
+  border: 0;
+  font-size: 12px;
+  cursor: pointer;
+  color: #20814d;
+  margin: 0;
+  padding: 0;
+}
